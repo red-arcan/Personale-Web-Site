@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Manuel Arcuti</title>
+  <meta name="description" content="Sito personale di Sofia Bianchi, sviluppatrice web full stack." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css" />
+  <link rel="icon" type="image/png" sizes="32x32" href="documents/favicon.png">
+
+
+
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+   
+</head>
+
+<body>
+   
+      
+  <!--Header / Nav -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="#top" aria-label="Vai all'inizio">
+        <span class="brand-dot" aria-hidden="true"></span>
+        <span class="brand-text">Curriculum Vitae</span>
+      </a>
+
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Apri/chiudi navigazione">
+      <label class="menu-btn" for="menu-toggle" aria-hidden="true">
+        <span></span><span></span><span></span>
+      </label>
+
+      <nav class="nav" aria-label="Principale">
+        <a href="#informazioni">Informazioni</a>
+        <a href="#esperienze">Esperienze</a>
+        <!--<a href="#conoscenze">Conoscenze</a>-->  
+        <a href="#progetti">Progetti</a>
+        <a href="#contatti">Contatti</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- Hero -->
+  <main id="top">
+    <section class="hero container">
+      <img class="avatar" src="documents/profile.jpeg" alt="me medesimo" />
+      <div class="hero-text">
+        <h1 class="name">Manuel Arcuti</h1>
+        <p class="role">Sviluppatore & Programmatore</p>
+        <p class="location">Lucca, Italia</p>
+
+        <div class="cta-row">
+          <a class="btn primary" href="cv.pdf" download>Scarica CV</a>
+          <a class="btn primary" href="#contatti">Contattami</a>
+          <a class="btn accent" href="https://manuelarcuti.app.n8n.cloud/form/100907e2-eda6-43ad-a406-046e86e74fd0"
+             aria-label="Prenota un appuntamento con Sofia">Prenota un appuntamento</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Informazioni -->
+    <section id="informazioni" class="section container card">
+      <h2>Informazioni</h2>
+      <p>
+        Sono uno studente di Ingegneria Informatica presso l'Università di Pisa, attualmente al terzo anno di corso, con una media aritmetica pari a 26/30.
+              Ho maturato una solida preparazione teorica e pratica in programmazione sia <b><u> front-end che back-end, nello sviluppo di basi di dati, in analisi numerica, calcolo scientifico, e nella gestione di strutture dati complesse.</b></u>
+              Parallelamente, possiedo una discreta esperienza nell’ambito hardware, avendo svolto attività di assemblaggio, diagnostica e manutenzione di appareti informatici.
+              Inoltre, ho affrontato progetti individuali e di gruppo durante i miei vari percorsi di studio, che mi hanno permesso di approfondire metodologie di sviluppo software, architetture client-server, e nozioni di sicurezza informatica.
+              <b><u>Pur non essendo onnisciente, affronto ogni incarico con spirito di apprendimento e serietà, garantendo un approccio preciso, flessibile e responsabile nell’esecuzione dei compiti assegnati. </u> </b>
+      </p>
+      
+      
+    </section>
+
+<!-- A) LETTER GLITCH - "QUELLO CHE SERVE A TE" -->
+
+ <!-- Dipendenze React + Babel -->
+ <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+ <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+ <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+
+    <section class="section container card" style="padding:0;border:none;background:transparent;box-shadow:none;">
+    <div class="visual-card">
+      <div class="visual-overlay">
+        <div>
+          <h2 class="visual-title">RESPONDABILE E AFFIDABILE</h2>
+          <p class="visual-sub"></p>
+        </div>
+      </div>
+      <div id="react-root" class="visual-canvas"></div>
+    </div>
+  </section>
+  <script type="text/babel" data-presets="react" src="js/letterGlitch.jsx"></script>
+
+
+    <!-- Esperienze -->
+    <section id="esperienze" class="section container card">
+      <h2>Esperienze</h2>
+
+      <article class="xp">
+        <div class="xp-head">
+          <h3 class="xp-role">Ennebi Computers SRL </h3>
+          <span class="xp-time">06-2020 – 09-2020</span>
+        </div>
+        <p class="xp-desc">
+          Tecnico di Laboratorio: installazione e preparazione di nuovi PC aquistati con vari software e SO,
+          diagnostica e riparazione di PC e dispositivi elettronici come stampanti, assemblamento di PC fissi destinati alla FOSBER
+        </p>
+      </article>
+
+      <article class="xp">
+        <div class="xp-head">
+          <h3 class="xp-role">Samsung Innovation Campus</h3>
+          <span class="xp-time">Settembre 2025 – Dicembre 2025</span>
+        </div>
+        <p class="xp-desc">
+          Progetto di collaborazione tra l'Università di Pisa e Samsung che consisteva nella Formazione
+          tramite più lezioni in ambiti come IoT , Machine Learing e Competenze Trasversali (Marketing, Start Up).
+          In fondo al percorso è stato sviluppato tramite un lavoro di gruppo un progetto riguardante...
+        </p>
+      </article>
+
+      <article class="xp">
+        <div class="xp-head">
+          <h3 class="xp-role">Centro YEP</h3>
+          <span class="xp-time">Settembre 2025 – In Corso</span>
+        </div>
+        <p class="xp-desc">
+          Centro per le ripetizioni. Sono insegnate di materie matematiche informatiche e fisiche.
+        </p>
+      </article>
+
+      <article class="xp">
+        <div class="xp-head">
+          <h3 class="xp-role">Haking Labs</h3>
+          <span class="xp-time">06-2022 – 08-2022</span>
+        </div>
+        <p class="xp-desc">
+          Tecnico in laboratorio per ripristinare PC funzionanti o altrimenti estrarre 
+          tutti i pezzi HW,testarli e classificarli per comporre nuovi PC perfettemante 
+          funzionanti.
+        </p>
+      </article>
+    </section>
+
+   
+    <section class="section container card" style="padding:0;border:none;background:transparent;box-shadow:none;">
+        <div class="visual-card">
+          <div class="visual-overlay">
+            <div>
+              <h2 class="visual-title">CURIOSO</h2>
+              <p class="visual-sub"></p>
+            </div>
+          </div>
+          <canvas id="neon-matrix" class="visual-canvas"></canvas>
+        </div>
+      </section>
+      
+      <script src="js/neonMatrix.js">  </script>
+      
+  
+
+    <!-- Conoscenze 
+    <section id="conoscenze" class="section container card">
+      <h2>Conoscenze</h2>
+      <ul class="taglist" aria-label="Competenze tecniche">
+        <li>JavaScript (ES6+)</li>
+        <li>TypeScript</li>
+        <li>React / Angular / Vue</li>
+        <li>Node.js / Express</li>
+        <li>Java / Spring Boot</li>
+        <li>Python (FastAPI)</li>
+        <li>MongoDB / PostgreSQL / MySQL</li>
+        <li>REST / GraphQL</li>
+        <li>Git / GitHub Actions</li>
+        <li>Testing (Jest, Playwright)</li>
+        <li>Performance &amp; Accessibility</li>
+        <li>Docker &amp; CI/CD</li>
+      </ul>
+    </section>
+  -->
+
+    <section id="conoscenze" class="section container">
+      <div class="card skills-card equal-card">
+        <header class="card-header">
+          <h2 class="section-title in-card">Conoscenze</h2>
+        </header>
+    
+        <!-- A) Pillole / Stack sintetico -->
+        <div class="skills-grid">
+          <div class="skills-group">
+            <h3 class="skills-heading">Linguaggi</h3>
+            <ul class="skill-chips">
+              <li class="chip">Java</li>
+              <li class="chip">HTML/Css/PHP/JavaScript</li>
+              <li class="chip">Python</li>
+              <li class="chip">C/C++/C#</li>
+              <li class="chip">SQL</li>
+            </ul>
+          </div>
+    
+          <div class="skills-group">
+            <h3 class="skills-heading">Framework & Software & Tooling</h3>
+            <ul class="skill-chips">
+              <li class="chip">Git/GitHub/GitLab</li>
+              <li class="chip">Node.js/Maven</li>
+              <li class="chip">Docker</li>
+              <li class="chip">Spring</li>
+              <li class="chip">VS/VSC </li>
+              <li class="chip">Cursor</li>
+              <li class="chip">Eclipse</li>
+              <li class="chip">Clion/PHPStorm</li>
+              <li class="chip">Mathlab</li>
+            </ul>
+          </div>
+    
+          <div class="skills-group">
+            <h3 class="skills-heading">Conoscenze ICT</h3>
+            <ul class="skill-chips">
+              <li class="chip">Apperecchiature MIKROTIK</li>
+              <li class="chip">Winbox</li>
+              <li class="chip">Wiregard</li>
+            </ul>
+          </div>
+    
+          <div class="skills-group">
+            <h3 class="skills-heading">Database</h3>
+            <ul class="skill-chips">
+              <li class="chip">MySQL</li>
+              <li class="chip">MongoDB</li>
+              <li class="chip">MySQLWorkbench/PHPmyAdmin</li>
+            </ul>
+          </div>
+    
+          <div class="skills-group">
+            <h3 class="skills-heading">AI & LLM</h3>
+            <ul class="skill-chips">
+              <li class="chip">Codex</li>
+              <li class="chip">Claude Code</li>
+              <li class="chip">ChatGPT</li>
+              <li class="chip">DeepSeek</li>
+              <li class="chip">Co-Pilot</li>
+              <li class="chip">N8N</li>
+            </ul>
+          </div>
+          
+        </div>
+
+      </section>
+        <!-- B) Parte descrittiva 
+        <div class="skills-detail">
+          <h3 class="skills-detail-title">Come lavoro (in pratica)</h3>
+          <ul class="detail-list">
+            <li><strong>Architettura & Scalabilità.</strong> Micro-servizi dove serve, API versionate, ADR per decisioni.</li>
+            <li><strong>Performance.</strong> Profiling (DevTools, p95), code-splitting, caching, indici & query plan.</li>
+            <li><strong>Qualità & Test.</strong> Unit/integration/e2e, CI con lint/coverage e gate pre-merge.</li>
+            <li><strong>Sicurezza.</strong> OWASP, sanitizzazione, secret management, least-privilege, rate-limit.</li>
+            <li><strong>DevOps.</strong> Container, preview env, rollback sicuri, observability (log/metriche/tracce).</li>
+            <li><strong>UX & Accessibilità.</strong> Design system, contrasto AA, focus state/ARIA.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  -->
+    
+      <!-- B) Parte descrittiva / Approfondimenti 
+      <div class="card skills-detail">
+        <h3 class="skills-detail-title">Come lavoro (in pratica)</h3>
+        <ul class="detail-list">
+          <li><strong>Architettura & Scalabilità.</strong> Micro-servizi dove serve, API versionate, ADR per le decisioni.</li>
+          <li><strong>Performance.</strong> Profiling (p95), code-splitting, caching, indici DB, CDN edge.</li>
+          <li><strong>Qualità & Test.</strong> Unit/integration/e2e, CI con lint e coverage.</li>
+          <li><strong>Sicurezza.</strong> OWASP Top-10, least-privilege, secret management, rate-limit.</li>
+          <li><strong>DevOps.</strong> Container, preview env, rollback, observability (logs/metrics/traces).</li>
+          <li><strong>UX & Accessibilità.</strong> Design system, contrasto AA, focus state/ARIA, interazioni < 100ms.</li>
+        </ul>
+      </div>
+    </section>
+  -->
+    
+
+    
+    <!-- Threads animation block (new, under Letter Glitch) -->
+    <section class="section container card" style="padding:0;border:none;background:transparent;box-shadow:none;">
+      <div class="visual-card">
+        <div class="visual-overlay">
+          <div>
+            <h2 class="visual-title">DISCIPLINATO</h2>
+            <p class="visual-sub"></p>
+          </div>
+        </div>
+        <canvas id="threads-bg" class="visual-canvas"></canvas>
+      </div>
+    </section>
+
+    <script src="js/threads.js"></script>
+  
+
+    <!-- Progetti -->
+    <section id="progetti" class="section container card">
+      <h2>Progetti</h2>
+
+      <article class="project">
+        <h3 class="project-title">Portfolio &amp; OSS</h3>
+        <p class="project-desc">
+          Raccolta dei miei progetti fatti durante gli anni accademici come componenti di esami e studi indipendenti.
+        </p>
+
+        <a class="btn link" href="https://github.com/red-arcan" target="_blank" rel="noopener noreferrer"
+           aria-label="Apri il profilo GitHub di Sofia">Vai al mio GitHub</a>
+      </article>
+    </section>
+
+
+
+    <section class="section container card" style="padding:0;border:none;background:transparent;box-shadow:none;">
+        <div class="visual-card">
+          <div class="visual-overlay">
+            <div>
+              <h2 class="visual-title">SCALABILE</h2>
+              <p class="visual-sub"></p>
+            </div>
+          </div>
+          <canvas id="dots-field" class="visual-canvas"></canvas>
+        </div>
+    </section>
+      
+    <script src="js/dotsField.js"></script>
+      
+
+    <section id="contatti" class="section container">
+      <div class="card contacts-card">
+        <header class="card-header">
+          <h2 class="section-title in-card">Contatti</h2>
+          <p class="contacts-sub">Preferisci una mail veloce o un appuntamento sul mio calendario.</p>
+        </header>
+    
+        <div class="contacts-grid">
+          <a class="contact-item" href="mailto:manuelarcuti36@gmail.com" aria-label="Invia una mail">
+            <span class="ci-label">Email</span>
+            <span class="ci-value">manuelarcuti36@gmail.com</span>
+          </a>
+    
+          <a class="contact-item" href="tel:+393441374959" aria-label="Chiama il numero">
+            <span class="ci-label">Telefono</span>
+            <span class="ci-value">+39 344 137 4959</span>
+          </a>
+    
+          <a class="contact-item" href="" target="_blank" rel="noopener" aria-label="Apri profilo LinkedIn">
+            <span class="ci-label">LinkedIn</span>
+            <span class="ci-value">non ancora attivo</span>
+          </a>
+    
+          <a class="contact-item" href="https://github.com/red-arcan" target="_blank" rel="noopener" aria-label="Apri GitHub">
+            <span class="ci-label">GitHub</span>
+            <span class="ci-value">github.com/red-arcan</span>
+          </a>
+    
+          
+        </div>
+    
+        <div class="contacts-cta">
+          
+          <a class="btn ghost" href="mailto:manuelarcuti36@gmail.com?subject=Richiesta%20informazioni">Scrivimi</a>
+          <a class="btn accent" href="https://manuelarcuti.app.n8n.cloud/form/100907e2-eda6-43ad-a406-046e86e74fd0" aria-label="Prenota un appuntamento">Prenota un appuntamento</a>
+        </div>
+      </div>
+    </section>
+    
+
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Manuel Arcuti • Lucca, Italia</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
