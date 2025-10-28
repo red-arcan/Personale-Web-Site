@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Raccolta Progetti</title>
+  <link rel="stylesheet" href="project_index.css"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="../documents/favicon.png">
+
+</head>
+<body>
+  <!-- Top bar con back -->
+  <nav class="topbar">
+    <button class="btn back" > <a class="back-btn" href="../index.html">← Indietro</a></button>
+    
+    <h1 class="page-title">Raccolta Progetti</h1>
+  </nav>
+
+  <main class="projects-wrapper">
+    <!-- Sub-nav sticky -->
+    <div class="pill-nav" aria-label="Navigazione sezioni progetti">
+      <a href="#showroom" class="pill">Showroom Siti</a>
+      <a href="#api" class="pill">API</a>
+      
+    </div>
+
+    <!-- SHOWROOM SITI -->
+    <section id="showroom" class="demo-section">
+      <header class="section-head">
+        <h2 class="section-title">Showroom Siti</h2>
+        <p class="section-sub">Selezione di siti vetrina e landing moderni, tutti personalizzabili</p>
+      </header>
+
+      <div class="project-grid">
+
+        <article class="demo-card">
+          <h4>Pizzeria</h4>
+          <p>Pagina web per una pizzeria</p>
+          <div class="card-actions">
+            <a class="btn primary" href="demo/landing-minimal.html" target="_blank" rel="noopener">Visualizza</a>
+          </div>
+        </article>
+
+        <article class="demo-card">
+          <h4>Bar</h4>
+          <p>Pagina web per un bar</p>
+          <div class="card-actions">
+            <a class="btn primary" href="showroom_pagine_web\bar\frontend\src\pages\Home.jsx" target="_blank" rel="noopener">Visualizza</a>
+          </div>
+        </article>
+
+        <article class="demo-card">
+          <h4>Ferramenta</h4>
+          <p>Pagina web per un ferramenta</p>
+          <div class="card-actions">
+            <a class="btn primary" href="showroom_pagine_web\ferramenta\index.html" target="_blank" rel="noopener">Visualizza</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- API -->
+    <section id="api" class="demo-section">
+      <header class="section-head">
+        <h2 class="section-title">API</h2>
+        <p class="section-sub">Micro-servizi divertenti e interessanti</p>
+      </header>
+
+      <div class="project-grid">
+
+        <article class="demo-card">
+          <h4>NASA APOD</h4>
+          <p>scopri l'immagine scattata all'universo il giorno che sei nato</p>
+          <div class="card-actions">
+            <a class="btn primary" href="using_API/nasa_api/form.html" target="_blank" rel="noopener">Provalo</a>
+            <a class="btn ghost" href="https://github.com/red-arcan/projects/using_API/nasa_api" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </article>
+
+        
+
+      </div>
+    </section>
+
+   
+
+    <!-- Footer con back e link GitHub -->
+    <footer class="page-footer">
+      <button class="btn back" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ Torna su</button>
+      <a class="btn primary" href="https://github.com/red-arcan" target="_blank" rel="noopener">Vai al mio GitHub</a>
+    </footer>
+  </main>
+</body>
+</html>

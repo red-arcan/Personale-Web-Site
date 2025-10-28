@@ -13,3 +13,8 @@ Poi modificato e migliorato con Gemini, Figma e conoscenze personali.
 
 Ho utilizzato la libreria React Bits per componenti visuali
 N8N per una prenotazione di appuntamenti con automazione nel ricevere notifica e scrittura appuntamento su Google Calendar 
+
+<h3> MINI PROGETTI INCORPORATI </h3>
+<ol>
+    <li><b>NASA API</b><li>: Sostituisci DEMO_KEY con la tua api_key che trovi su: https://api.nasa.gov/
+</ol>

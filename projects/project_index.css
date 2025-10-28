@@ -1,0 +1,157 @@
+:root{
+  --bg:#f4f6fb;
+  --text:#0b0f19;
+  --muted:#6b7280;
+  --card:#ffffff;
+  --line:#e6ecf5;
+  --brand:#2a56e3;
+  --brand-2:#1c4ca0;
+  --accent1:#08aeea;
+  --accent2:#2af598;
+}
+
+/* base */
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.5;
+  scroll-behavior:smooth;
+}
+
+/* top bar */
+.topbar{
+  position: sticky; top:0; z-index: 10;
+  display:flex; align-items:center; justify-content:space-between;
+  gap:.75rem; padding: .75rem 1rem;
+  background: linear-gradient(180deg, #ffffffdd, #ffffffc8);
+  backdrop-filter: blur(8px);
+  border-bottom:1px solid #eef2f7;
+}
+.page-title{font-size:1.05rem; margin:0; font-weight:700}
+
+/* buttons */
+.btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  gap:.5rem; padding:.6rem .9rem;
+  border-radius:10px; font-weight:600; text-decoration:none; cursor:pointer;
+  border:1px solid transparent; white-space:nowrap;
+}
+.btn.primary{ background:var(--brand); color:#fff; }
+.btn.primary:hover{ background:var(--brand-2); }
+.btn.ghost{ background: #fff; color: var(--text); border-color: var(--line); }
+.btn.ghost:hover{ border-color:#d9e4f5; }
+.btn.back{ background:#111827; color:#fff; }
+.btn.back:hover{ filter:brightness(1.05); }
+
+/* wrapper */
+.projects-wrapper{ width:min(1100px, 92vw); margin: 1rem auto 3rem; }
+
+/* pill sub-nav */
+.pill-nav{
+  position: static !important;
+  top: auto !important;
+  z-index: auto !important;
+}
+@media (max-width: 720px){
+  .pill-nav{
+    position: static !important;
+    top: auto !important;
+  }
+}
+.pill{
+  display:inline-flex; align-items:center; border-radius:999px;
+  padding:.5rem .9rem; background:#fff; border:1px solid var(--line);
+  color:#111827; text-decoration:none; font-weight:600; font-size:.95rem;
+  flex:0 0 auto;
+}
+.pill:hover{ border-color:#d9e4f5; }
+
+/* sezioni */
+.demo-section{ margin-top:2rem; }
+.section-head{ margin-bottom:1.2rem; }
+.section-title{ font-size:1.35rem; font-weight:800; margin:.25rem 0; }
+.section-sub{ color:var(--muted); margin:.2rem 0 0; }
+
+/* griglia card */
+.project-grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.4rem;
+}
+
+.demo-card{
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1.2rem 1.2rem 1rem;
+  box-shadow: 0 10px 24px rgba(17,24,39,.05);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  text-align:left;
+
+  position: relative;
+  padding-bottom: 4.25rem;
+}
+.demo-card:hover{
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px rgba(17,24,39,.10);
+  border-color:#dfe7f4;
+}
+.demo-card h4{
+  margin:.1rem 0 .5rem; font-size:1.1rem; font-weight:800; color:#111827;
+}
+.demo-card p{
+  margin:0 0 .9rem; color:var(--muted); font-size:.96rem;
+}
+.card-actions{ display:flex; flex-wrap:wrap; gap:.5rem; }
+
+.demo-card .btn.primary{
+  position: absolute;
+  left: 1.2rem;                     /* allineato al padding laterale della card */
+  bottom: 1rem;                     /* allineato al padding inferiore */
+  z-index: 1;
+  /* opzionale: evita che si allarghi troppo */
+  max-width: calc(100% - 2.4rem);
+}
+
+.card-actions{
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  margin-top: .6rem;
+}
+
+@media (max-width: 560px){
+  .demo-card .btn.primary{
+    left: 1rem;
+    bottom: .9rem;
+    max-width: calc(100% - 2rem);
+  }
+}
+
+
+/* footer */
+.page-footer{
+  display:flex; gap:.6rem; justify-content:center; align-items:center;
+  margin-top: 2.2rem;
+}
+
+/* responsive */
+@media (max-width: 720px){
+  .topbar { gap:.5rem; }
+  .page-title { display:none; }
+  .pill-nav { top: 54px; }
+}
+
+
+a.back-btn {
+  text-decoration: none; /* rimuove la sottolineatura */
+  color: inherit; /* prende il colore del testo del parent (in questo caso il bottone) */
+}
+
+a.back-btn:hover {
+  color: inherit; /* Rimuove il cambio colore al passaggio del mouse */
+  text-decoration: none; /* Evita che venga sottolineato quando si passa sopra */
+}
